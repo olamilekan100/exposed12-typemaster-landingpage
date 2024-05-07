@@ -1,0 +1,302 @@
+/* The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+-background-color for link:#E8EFF2
+-background-color for link- #F16718
+
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700 */
+
+/* 1) FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 /
+     44 / 52 / 62 / 74 / 86 / 98 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "open-sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: hsl(192, 100%, 9%);
+
+  overflow-x: hidden;
+}
+
+/* picture > * {
+  max-width: 100%;
+} */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 5.2rem 5.2rem;
+}
+
+/* .header-logo {
+  font-size: ;
+  padding-right: ;
+  padding-bottom: ;
+  background-color: ;
+  color: ;
+} */
+
+.header-link:link,
+.header-link:visited {
+  padding: 2rem;
+  background-color: hsl(198, 28%, 93%);
+  color: hsl(192, 100%, 9%);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  /* font-weight: 800; */
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.header-link:hover,
+.header-link:active {
+  background-color: #ddeaf0;
+}
+
+.head {
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav {
+  display: ;
+  background-color: black;
+  position: fixed;
+} */
+.keyboard-imgs {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.keyboard-img-two {
+  width: 57%;
+  border-radius: 2rem;
+}
+
+.keyboard-img-three {
+  width: 100%;
+  border-radius: 2rem;
+  margin-left: -4rem;
+}
+
+.svg-img {
+  background-color: hsl(22, 89%, 52%);
+  color: white;
+  width: 3.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+  margin-bottom: 2rem;
+}
+
+.first-header {
+  color: hsl(192, 100%, 9%);
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.second-header {
+  color: hsl(192, 100%, 9%);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.tertiary-header {
+  color: hsl(192, 100%, 9%);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* .description-container {
+  display: flex;
+  flex-direction: column;
+  gap:2rem
+} */
+
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.body-link:link,
+.body-link:visited {
+  background-color: hsl(22, 89%, 52%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.body-link:hover,
+.body-link:active {
+  background-color: hsl(22, 83%, 47%);
+}
+
+.link-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.header-para-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-2--cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.grid-3--cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* .release {
+  margin-left: rem;
+} */
+
+.section-one {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1.8rem 5.2rem;
+}
+
+.description-container {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.description-container:hover {
+  transform: translatey(-2.5rem);
+}
+
+.section-three {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+.footer-paragraph {
+  text-align: center;
+  font-size: small;
+}
+
+/*****************************
+*****************************
+fixing the safari flexbox gap
+*****************************
+*****************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
